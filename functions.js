@@ -26,3 +26,10 @@ document.getElementById("justify").addEventListener("click", function () {
   const textContent = getTextFieldById("text");
   textContent.style.textAlign = "justify";
 });
+
+document.getElementById("font-size").addEventListener("keyup", function () {
+  const textContent = getTextFieldById("text");
+  const fontSizeString = document.getElementById("font-size").value;
+  const fontSize = parseInt(fontSizeString);
+  textContent.style.fontSize = fontSize + "px";
+});
