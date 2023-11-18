@@ -10,3 +10,7 @@ document.getElementById("underline").addEventListener("click", function () {
   const textContent = getTextFieldById("text");
   textContent.style.textDecoration = "underline";
 });
+document.getElementById("left").addEventListener("click", function () {
+  const textContent = getTextFieldById("text");
+  textContent.style.textAlign = "left";
+});
