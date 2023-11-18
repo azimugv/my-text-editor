@@ -43,3 +43,10 @@ document.getElementById("case").addEventListener("click", function () {
     textContent.value = currentText.toUpperCase();
   }
 });
+
+document.getElementById("favcolor").addEventListener("input", function () {
+  const textContent = getTextFieldById("text");
+  const fontSizeString = document.getElementById("font-size").value;
+  const color = document.getElementById("favcolor").value;
+  textContent.style.color = color;
+});
