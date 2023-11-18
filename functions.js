@@ -33,3 +33,13 @@ document.getElementById("font-size").addEventListener("keyup", function () {
   const fontSize = parseInt(fontSizeString);
   textContent.style.fontSize = fontSize + "px";
 });
+document.getElementById("case").addEventListener("click", function () {
+  const textContent = getTextFieldById("text");
+  const currentText = textContent.value;
+
+  if (currentText === currentText.toUpperCase()) {
+    textContent.value = currentText.toLowerCase();
+  } else {
+    textContent.value = currentText.toUpperCase();
+  }
+});
