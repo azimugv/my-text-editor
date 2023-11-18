@@ -22,3 +22,7 @@ document.getElementById("right").addEventListener("click", function () {
   const textContent = getTextFieldById("text");
   textContent.style.textAlign = "right";
 });
+document.getElementById("justify").addEventListener("click", function () {
+  const textContent = getTextFieldById("text");
+  textContent.style.textAlign = "justify";
+});
