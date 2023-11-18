@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Text Editor</title>
+    <script
+      src="https://kit.fontawesome.com/1705a29ec8.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="container bg-sky-300 h-screen mx-auto">
+      <header>
+        <h1 class="text-black text-center text-6xl font-semibold">
+          My Text Editor
+        </h1>
+      </header>
+      <div class="bg-slate-300 border-solid border-8 p-12 h-4/5 mt-8">
+        <div>
+          <div class="flex justify-between w-9/12">
+            <div>
+              <i class="fa-solid fa-bold" id="bold"></i>
+              <i class="fa-solid fa-italic" id="italic"></i>
+              <i class="fa-solid fa-underline" id="underline"></i>
+            </div>
+            <div>
+              <i class="fa-solid fa-align-left" id="left"></i>
+              <i class="fa-solid fa-align-center" id="center"></i>
+              <i class="fa-solid fa-align-right" id="right"></i>
+              <i class="fa-solid fa-align-justify" id="justify"></i>
+            </div>
+            <div class="flex justify-between">
+              <input id="font-size" type="number" />
+              <h4 class="bg-slate-600 px-2 rounded-md text-white" id="case">
+                aA
+              </h4>
+              <input
+                type="color"
+                id="favcolor"
+                name="favcolor"
+                value="#ff0000"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <textarea id="text" class="w-9/12 h-52 mx-auto mt-8"></textarea>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="functions.js"></script>
+    <script></script>
+  </body>
+</html>
