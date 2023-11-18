@@ -18,3 +18,7 @@ document.getElementById("center").addEventListener("click", function () {
   const textContent = getTextFieldById("text");
   textContent.style.textAlign = "center";
 });
+document.getElementById("right").addEventListener("click", function () {
+  const textContent = getTextFieldById("text");
+  textContent.style.textAlign = "right";
+});
